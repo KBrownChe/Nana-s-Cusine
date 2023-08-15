@@ -1,0 +1,45 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
+/* @import url("https://fonts.googleapis.com/css?family=Ho
+memade Apple|Alex Brush"); */
+
+:root {
+    --primary: #9c27b0;
+}
+
+.mybg-primary {
+    background-color: var(--primary);
+}
+
+.mytext-primary {
+    color: var(--primary);
+}
+
+.primary-border {
+    border: 2px solid var(--primary);
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.411);
+}
+
+.search-box .search-field {
+    background-color: transparent;
+    color: white;
+}
+
+.search-box {
+    max-width: 300px;
+}
+
+.toast {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+}

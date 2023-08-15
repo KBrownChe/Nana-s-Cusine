@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "build": "webpack --config webpack.config.js --watch"
+  },
+  
+  "dependencies": {
+    "firebase": "^9.22.2"
+  },
+  "devDependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
+}

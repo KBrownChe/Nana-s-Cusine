@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100">
+ 
+    <div class="bg-light shadow px-3 py-2 rounded vw-100"  style="max-width: 580px;">
+        <div class="d-flex flex-column align-items-center">
+
+            <div class="d-flex">
+                <img src="../assets/images/logo2.svg" alt="Logo" width="50px">
+                <p class="ms-3 fs-2 mytext-primary fw-bold">Upload Post</p>
+            </div>
+            
+            <form class="m-4">
+                <div class="input-group mb-3">
+                    <input type="file" 
+                    accept="image/*;capture=camera"
+                    class="form-control" id="postImage">
+                    <label class="input-group-text" for="postImage">Upload Image</label>
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="postTitle">Title</span>
+                    <input type="text" class="form-control" placeholder="Enter title..." aria-label="Post Title" aria-describedby="postTitle">
+                  </div>
+
+                  <div class="input-group mb-3">
+                    <span class="input-group-text">Price</span>
+                    <input type="number" 
+                    id="postPrice"
+                    placeholder="Enter price..."
+                    class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">CFA</span>
+                  </div>
+
+                  <select class="form-select form-select-lg mb-3 fs-6" aria-label=".form-select-lg example">
+                    <option selected>Food Categories</option>
+                    <option value="traditional">Traditional</option>
+                    <option value="westernWorld">Western World Food</option>
+                    <option value="drinks">Drinks</option>
+                    <option value="weddings">Weddings</option>
+                    <option value="">Celebrations</option>
+                    <option value="">Breakfast</option>
+                    <option value="">Lunch</option>
+                  </select>
+
+                  <div class="form-floating">
+                    <textarea class="form-control" placeholder="Leave a comment here" id="postDescription" style="height: 100px"></textarea>
+                    <label for="postDescription">Description...</label>
+                  </div>
+
+                  <div class="mt-4 d-flex justify-content-between">
+                    <Button type="button" class="btn primary-border mytext-primary fw-bold">CANCEL</Button>
+
+                    <a href="../authentication/login.html" type="submit" class="btn mybg-primary text-light ">POST</a>
+                  </div>
+            </form>
+        </div>
+    </div>
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

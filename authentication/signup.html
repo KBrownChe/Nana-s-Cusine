@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Nana's Cousine</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body style="max-width: 1080px; margin: auto; padding: 10px 0;" class="vh-100">
+  
+  <div class="row h-100 mx-2">
+    <div  class="col-12 col-md-5 mybg-primary d-flex flex-column justify-content-between">
+      <nav class="navbar">
+        <div class="mx-4 my-3">
+          <a href="" class="nav-brand text-decoration-none">
+            <img src="/assets/images/logo.svg" alt="" width="20px">
+            <span class="fs-6 fw-bold text-white">Nana's Cousine</span>
+          </a>
+        </div>
+      </nav>
+
+      <div class="p-3 mb-5 pb-5 d-flex justify-content-center flex-column">
+        <p class="fs-2 fw-semibold text-white text-center">Welcome Back!</p>
+        <p class="text-white text-center">To keep connected with us, please login with your personal information</p>
+        <div>
+          <a href="login.html" type="button" class="btn btn-outline-light px-5 py-2 rounded-pill mt-3 mx-auto d-block" style="width: fit-content">
+            Login
+          </a>
+        </div>
+      </div>
+
+      <div></div>
+    </div>
+
+    <div class="col-12 col-md-7 bg-light d-flex flex-column justify-content-center">
+      <div>
+        <p class="text-center fs-1 mytext-primary fw-bold">Create Account</p>
+        <div class="d-flex justify-content-around mx-5 px-3">
+          <a href=""><i class="bi bi-facebook" style="color: blue;"></i></a>
+          <a href=""><i class="bi bi-google" style="color: red;"></i></a>
+          <a href=""><i class="bi bi-whatsapp" style="color: green;"></i></a>
+        </div>
+        <p class="text-center mt-3">Or use your email for registration</p>
+        <form id="signupForm" class="mx-5 my-3" novalidate>
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
+            <input type="text" class="form-control" id="username" placeholder="Enter name" aria-label="Username" aria-describedby="basic-addon1">
+          </div>
+          <p class="text-danger" id="name-error"></p>
+
+          <select class="form-select form-select-lg mb-3 fs-6" id="gender" aria-label=".form-select-lg example">
+            <option selected value="">Select Gender</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+          <p class="text-danger" id="gender-error"></p>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-fill"></i></span>
+            <input type="email" class="form-control" id="email" placeholder="Enter Email" aria-label="email" aria-describedby="basic-addon1">
+          </div>
+          <p class="text-danger" id="email-error"></p>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon"><i class="bi bi-lock-fill"></i></span>
+            <input type="password" class="form-control" id="password" placeholder="Enter Password" aria-label="password" aria-describedby="basic-addon1">
+          </div>
+          <p class="text-danger" id="password-error"></p>
+
+          <div class="input-group mb-3">
+            <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock-fill"></i></span>
+            <input type="password" class="form-control" id="confirm-password" placeholder="Confirm Password" aria-label="confirm-password" aria-describedby="basic-addon1">
+          </div>
+          <p class="text-danger" id="confirm-password-error"></p>
+
+          <div>
+            <button type="submit" class="btn mybg-primary text-white px-5 py-2 rounded-pill mt-3 mx-auto d-block">
+              Sign Up
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="toast align-items-center bg-success" id="signup-toast" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+          <div class="toast-body text-white" id="toast-message">
+            Hello, world! This is a toast message.
+          </div>
+          <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+  </script>
+  <script defer src="../dist/signup.js"></script>
+</body>
+
+</html>
